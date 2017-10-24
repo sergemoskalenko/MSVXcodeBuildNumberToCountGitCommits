@@ -5,7 +5,7 @@ http://camopu.rhorse.ru/MSVXcodeBuildNumberToCountGitCommits.html
 Set the build number to the count of Git commits
 
 ```perl
- # Set the build number to the count of Git commits
+# Set the build number to the count of Git commits
 
 buildNumber=$(git rev-list --count --first-parent HEAD)
 
