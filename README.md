@@ -6,9 +6,9 @@ Set the build number to the count of Git commits
 
 ```perl
 # Set the build number to the count of Git commits
+# https://github.com/sergemoskalenko/MSVXcodeBuildNumberToCountGitCommits
 
 buildNumber=$(git rev-list --count --first-parent HEAD)
-
 /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber" "${PROJECT_DIR}/${INFOPLIST_FILE}"
 ```
 
