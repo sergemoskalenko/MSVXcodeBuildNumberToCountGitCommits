@@ -2,6 +2,7 @@
 //  AppDelegate.h
 //  MSVXcodeBuildNumberToCountGitCommits
 //
+//  https://github.com/sergemoskalenko/MSVXcodeBuildNumberToCountGitCommits
 //  Created by Serge Moskalenko on 11/6/17.
 //  Copyright © 2017 Serge Moskalenko. All rights reserved.
 //
