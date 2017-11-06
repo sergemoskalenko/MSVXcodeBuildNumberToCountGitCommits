@@ -9,7 +9,7 @@ Set the build number to the count of Git commits
 
 buildNumber=$(git rev-list --count --first-parent HEAD)
 
-/usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber""${PROJECT_DIR}/${INFOPLIST_FILE}"
+/usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber" "${PROJECT_DIR}/${INFOPLIST_FILE}"
 ```
 
 [<img src="https://raw.githubusercontent.com/sergemoskalenko/MSVXcodeBuildNumberToCountGitCommits/master/images/image1-726468.png" alt="Screen"/>](https://ios-objective-c.blogspot.com/2017/08/set-build-number-to-count-of-git-commits.html)
