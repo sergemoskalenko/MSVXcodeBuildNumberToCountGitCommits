@@ -11,9 +11,16 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
         
+    @IBOutlet weak var labelView: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
+        
+        let appVersionString = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+        let appBuildString = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
+        
+        labelView.text = appVersionString! + "(build: " + appBuildString! + ")"
     }
     
     override func didReceiveMemoryWarning() {
