@@ -12,7 +12,35 @@
 		173860691FB0BAF90051C726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173860671FB0BAF90051C726 /* Main.storyboard */; };
 		1738606B1FB0BAF90051C726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1738606A1FB0BAF90051C726 /* Assets.xcassets */; };
 		1738606E1FB0BAF90051C726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1738606C1FB0BAF90051C726 /* LaunchScreen.storyboard */; };
+		FD4AEDAD21664A5E00ED6FBE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4AEDAC21664A5E00ED6FBE /* NotificationCenter.framework */; };
+		FD4AEDB021664A5E00ED6FBE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AEDAF21664A5E00ED6FBE /* TodayViewController.swift */; };
+		FD4AEDB321664A5E00ED6FBE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4AEDB121664A5E00ED6FBE /* MainInterface.storyboard */; };
+		FD4AEDB721664A5E00ED6FBE /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD4AEDAA21664A5E00ED6FBE /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD4AEDB521664A5E00ED6FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 173860581FB0BAF90051C726 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD4AEDA921664A5E00ED6FBE;
+			remoteInfo = TodayExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD4AEDBB21664A5E00ED6FBE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD4AEDB721664A5E00ED6FBE /* TodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		173860601FB0BAF90051C726 /* MSVXcodeBuildNumberToCountGitCommits-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MSVXcodeBuildNumberToCountGitCommits-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +50,11 @@
 		1738606A1FB0BAF90051C726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1738606D1FB0BAF90051C726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1738606F1FB0BAF90051C726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4AEDAA21664A5E00ED6FBE /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4AEDAC21664A5E00ED6FBE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		FD4AEDAF21664A5E00ED6FBE /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		FD4AEDB221664A5E00ED6FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FD4AEDB421664A5E00ED6FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD4AEDA721664A5E00ED6FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4AEDAD21664A5E00ED6FBE /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				173860621FB0BAF90051C726 /* MSVXcodeBuildNumberToCountGitCommits-Swift */,
+				FD4AEDAE21664A5E00ED6FBE /* TodayExtension */,
+				FD4AEDAB21664A5E00ED6FBE /* Frameworks */,
 				173860611FB0BAF90051C726 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				173860601FB0BAF90051C726 /* MSVXcodeBuildNumberToCountGitCommits-Swift.app */,
+				FD4AEDAA21664A5E00ED6FBE /* TodayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +108,24 @@
 			path = "MSVXcodeBuildNumberToCountGitCommits-Swift";
 			sourceTree = "<group>";
 		};
+		FD4AEDAB21664A5E00ED6FBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD4AEDAC21664A5E00ED6FBE /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD4AEDAE21664A5E00ED6FBE /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FD4AEDAF21664A5E00ED6FBE /* TodayViewController.swift */,
+				FD4AEDB121664A5E00ED6FBE /* MainInterface.storyboard */,
+				FD4AEDB421664A5E00ED6FBE /* Info.plist */,
+			);
+			path = TodayExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -75,15 +137,34 @@
 				1738605D1FB0BAF90051C726 /* Frameworks */,
 				1738605E1FB0BAF90051C726 /* Resources */,
 				173860751FB0BC3F0051C726 /* Set the build number to the count of Git commits */,
+				FD4AEDBB21664A5E00ED6FBE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FD4AEDB621664A5E00ED6FBE /* PBXTargetDependency */,
 			);
 			name = "MSVXcodeBuildNumberToCountGitCommits-Swift";
 			productName = "MSVXcodeBuildNumberToCountGitCommits-Swift";
 			productReference = 173860601FB0BAF90051C726 /* MSVXcodeBuildNumberToCountGitCommits-Swift.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FD4AEDA921664A5E00ED6FBE /* TodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD4AEDB821664A5E00ED6FBE /* Build configuration list for PBXNativeTarget "TodayExtension" */;
+			buildPhases = (
+				FD4AEDA621664A5E00ED6FBE /* Sources */,
+				FD4AEDA721664A5E00ED6FBE /* Frameworks */,
+				FD4AEDA821664A5E00ED6FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExtension;
+			productName = TodayExtension;
+			productReference = FD4AEDAA21664A5E00ED6FBE /* TodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,12 +172,16 @@
 		173860581FB0BAF90051C726 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Serge Moskalenko";
 				TargetAttributes = {
 					1738605F1FB0BAF90051C726 = {
 						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					FD4AEDA921664A5E00ED6FBE = {
+						CreatedOnToolsVersion = 9.4.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -115,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				1738605F1FB0BAF90051C726 /* MSVXcodeBuildNumberToCountGitCommits-Swift */,
+				FD4AEDA921664A5E00ED6FBE /* TodayExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +213,14 @@
 				1738606E1FB0BAF90051C726 /* LaunchScreen.storyboard in Resources */,
 				1738606B1FB0BAF90051C726 /* Assets.xcassets in Resources */,
 				173860691FB0BAF90051C726 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD4AEDA821664A5E00ED6FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4AEDB321664A5E00ED6FBE /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Set the build number to the count of Git commits\n# https://github.com/sergemoskalenko/MSVXcodeBuildNumberToCountGitCommits\n\nbuildNumber=$(git rev-list --count --first-parent HEAD)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+			shellScript = "# Set the build number to the count of Git commits\n# https://github.com/sergemoskalenko/MSVXcodeBuildNumberToCountGitCommits\n\nbuildNumber=$(git rev-list --count --first-parent HEAD)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${INFOPLIST_FILE}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -159,7 +253,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD4AEDA621664A5E00ED6FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4AEDB021664A5E00ED6FBE /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD4AEDB621664A5E00ED6FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD4AEDA921664A5E00ED6FBE /* TodayExtension */;
+			targetProxy = FD4AEDB521664A5E00ED6FBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		173860671FB0BAF90051C726 /* Main.storyboard */ = {
@@ -176,6 +286,14 @@
 				1738606D1FB0BAF90051C726 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FD4AEDB121664A5E00ED6FBE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD4AEDB221664A5E00ED6FBE /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -291,6 +409,7 @@
 		173860731FB0BAF90051C726 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "MSVXcodeBuildNumberToCountGitCommits-Swift/Info.plist";
@@ -306,6 +425,7 @@
 		173860741FB0BAF90051C726 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "MSVXcodeBuildNumberToCountGitCommits-Swift/Info.plist";
@@ -313,6 +433,42 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Serge.Moskalenko.MSVXcodeBuildNumberToCountGitCommits-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD4AEDB921664A5E00ED6FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Serge.Moskalenko.MSVXcodeBuildNumberToCountGitCommits-Swift.TodayExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD4AEDBA21664A5E00ED6FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Serge.Moskalenko.MSVXcodeBuildNumberToCountGitCommits-Swift.TodayExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,6 +491,15 @@
 			buildConfigurations = (
 				173860731FB0BAF90051C726 /* Debug */,
 				173860741FB0BAF90051C726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD4AEDB821664A5E00ED6FBE /* Build configuration list for PBXNativeTarget "TodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD4AEDB921664A5E00ED6FBE /* Debug */,
+				FD4AEDBA21664A5E00ED6FBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
